@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21">
+
+
+
+	<Button onAction="#ExitBtn" prefHeight="25.0" prefWidth="41.0" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-style: italic; -fx-font-weight: bold;" text="Exit" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+
+	<Label style="-fx-font-style: italic;" text="Search By Subscription_Number:" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+	<TextField fx:id="searchField" prefWidth="200" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+
+	<Button fx:id="searchButton" onAction="#SearchBtn" style="-fx-background-color: limegreen; -fx-text-fill: white; -fx-font-style: italic; -fx-font-weight: bold;" text="Search" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+
+
+
+	<HBox spacing="5" GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.rowIndex="1">
+		<Label style="-fx-background-color: #d0f0f0; -fx-padding: 5; -fx-font-style: italic;" text="parking_space" />
+		<Label style="-fx-background-color: #d0f0f0; -fx-padding: 5; -fx-font-style: italic;" text="order_number" />
+		<Label style="-fx-background-color: #d0f0f0; -fx-padding: 5; -fx-font-style: italic;" text="order_date" />
+		<Label style="-fx-background-color: #d0f0f0; -fx-padding: 5; -fx-font-style: italic;" text="confirmation_code" />
+		<Label style="-fx-background-color: #d0f0f0; -fx-padding: 5; -fx-font-style: italic;" text="subscriber_id" />
+		<Label style="-fx-background-color: #d0f0f0; -fx-padding: 5; -fx-font-style: italic;" text="date_of_placing_an_order" />
+	</HBox>
+
+
+	<ScrollPane fitToWidth="true" style="-fx-background-color: white;" GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.rowIndex="2">
+		<VBox fx:id="dataContainer" prefHeight="300" />
+	</ScrollPane>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
